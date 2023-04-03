@@ -1,0 +1,29 @@
+<div class="launch-details">
+    <h2>{{ launch.mission_name }} Details</h2>
+    <ul>
+        <li>
+            <strong>Mission Patch:</strong>
+            <img [src]="launch.links.mission_patch_small" alt="Mission Patch">
+        </li>
+        <li>
+            <strong>Launch Date:</strong>
+            <span>{{ launch.launch_date_local }}</span>
+        </li>
+        <li>
+            <strong>Rocket Name:</strong>
+            <span>{{ launch.rocket.rocket_name }}</span>
+        </li>
+        <li>
+            <strong>Launch Site:</strong>
+            <span>{{ launch.launch_site.site_name_long }}</span>
+        </li>
+        <li>
+            <strong>Launch Success:</strong>
+            <span>{{ launch.launch_success }}</span>
+        </li>
+        <li>
+            <strong>Details:</strong>
+            <span>{{ launch.details }}</span>
+        </li>
+    </ul>
+</div>

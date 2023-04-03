@@ -1,0 +1,19 @@
+<div class="filter-container">
+    <p>Filter By Year</p>
+    <select>
+        <option value="all">All</option>
+        <option *ngFor="let year of years" (click)="filterByYear(year)" value="{{ year }}">{{ year }}</option>
+    </select>
+</div>
+<ul>
+    <li *ngFor="let launch of missionList">
+        <a (click)="handleMissionClick(launch)">
+            <img [src]="launch.links.mission_patch_small">
+            <div class="launch-details">
+                <h2>{{ launch.mission_name }}</h2>
+                <p><strong>Launch Year:</strong> {{ launch.launch_year }}</p>
+                <p><strong>Details:</strong> {{ launch.details }}</p>
+            </div>
+        </a>
+    </li>
+</ul>

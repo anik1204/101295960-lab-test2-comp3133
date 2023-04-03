@@ -1,0 +1,45 @@
+.launch-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 500px;
+}
+
+.launch-details h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.launch-details ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.launch-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.launch-details li:last-child {
+    border-bottom: none;
+}
+
+.launch-details img {
+    max-width: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.launch-details strong {
+    color: #444;
+}
